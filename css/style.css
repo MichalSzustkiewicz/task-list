@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 20px 75px;
+    background-color: #eee;
+}
+
+.paragraph {
+    border-bottom: 2px solid black;
+}
