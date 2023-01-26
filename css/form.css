@@ -1,0 +1,22 @@
+.form__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__field {
+    flex-basis: 600px;
+    flex-grow: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.form__button {
+    flex-basis: 130px;
+    flex-shrink: 0;
+    color: white;
+    background-color: teal;
+    border: none;
+    border-radius: 2px;
+}
