@@ -1,14 +1,5 @@
 {
-    const tasks = [
-        {
-            content: "podlać kwiaty",
-            done: false,
-        },
-        {
-            content: "skosić trawę",
-            done: true,
-        },
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({ content: newTaskContent });
@@ -78,13 +69,15 @@
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        const formInput = document.querySelector(".js-newTask");
+        const newTaskContent = formInput.value.trim();
 
-        if (newTaskContent === "") {
-            return;
+        if (newTaskContent !== "") {
+            addNewTask(newTaskContent);
+            formInput.value = "";
         }
 
-        addNewTask(newTaskContent);
+        formInput.focus();
     };
 
     const init = () => {
