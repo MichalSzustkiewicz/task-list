@@ -22,7 +22,7 @@
     background: hsl(180, 100%, 25%);
     border: none;
     border-radius: 2px;
-    transition: background 1s, transform 1s;
+    transition: background 0.5s, transform 0.5s;
 }
 
 .form__button:hover {
