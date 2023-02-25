@@ -13,6 +13,10 @@
     border-bottom: 1px solid #ddd;
 }
 
+.tasks__item--hidden {
+    display: none;
+}
+
 .tasks__content--done {
     text-decoration: line-through;
 }
@@ -42,9 +46,9 @@
 }
 
 .tasks__button--remove:hover {
-    background: hsl(348, 83%, 52%);
+    background: hsl(348, 83%, 55%);
 }
 
 .tasks__button--remove:active {
-    background: hsl(348, 83%, 57%);
+    background: hsl(348, 83%, 60%);
 }
